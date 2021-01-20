@@ -104,39 +104,30 @@ function topFunction() {
 })(jQuery);
 
 // ---------navbar  scroll animation END-------------------------------------------------------------------
+
+// <!-------------navbar menu scroll animation END---------------------------------------------->
+
+var navbar = $(".navbar");
 $(document).ready(function() {
+
     $(function() {
-
-        // $(".nav-item a").removeClass("text-white");
-        var navbar = $(".navbar")
+        navbar.addClass("h_80px", 2000);
         $(window).on("scroll", function() {
-
             if ($(window).scrollTop() > 50) {
-
-                navbar.addClass("h_70px");
+                navbar.addClass("h_50px");
                 navbar.removeClass("h_80px");
-
                 $(".main_nav").css('box-shadow', '0px 1px 20px #9099ff');
-                $(".navbar").css('padding', '1em 0em 1em 2em');
-
-
-
+                $(".main_nav").css('background', 'var(--body-color)');
 
             } else {
-
-
-                $(".main_nav").css('box-shadow', 'none');
-                navbar.removeClass("h_70px");
+                navbar.removeClass("h_50px");
                 navbar.addClass("h_80px", 2000);
-                $(".navbar").css('padding', '1.8em 0em 1em 2em');
-
-
-
+                $(".main_nav").css('box-shadow', 'none');
+                $(".main_nav").css('background', 'var(--body-color)');
 
             }
-
         });
     });
 
 });
-// <!-------------navbar menu scroll animation END---------------------------------------------->
+// ------------humburger icon -----------------------------------------

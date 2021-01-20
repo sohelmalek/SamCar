@@ -31,12 +31,15 @@ html {
 h6,
 p {
     font-family: 'Nunito', sans-serif;
+    color: var(--font-color);
 }
 
 h1,
 h2,
 h4,
-h5 {
+h5,
+h3 {
+    color: var(--font-color);
     font-family: 'Dosis', sans-serif;
 }
 
@@ -77,15 +80,32 @@ h1 {
 /* --------scroll to fix navbar animation-------------------------------- */
 
 .main_nav {
-    background-color: var(--body-color);
     position: fixed;
     z-index: 1000;
     width: 100%;
     height: auto;
     -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
     transition: all ease-out .5s;
 }
+
+
+/* .h_50px {
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    height: 60px;
+}
+
+.h_80px {
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    height: 80px;
+} */
 
 
 /* --------scroll to fix navbar animation END-------------------------------- */
@@ -101,8 +121,10 @@ i {
 /* ------NAVBAR---------------------------------------------------------------------------- */
 
 .navbar {
-    padding: 1.8em 0em 1em 2em;
+    /* padding: 1.8em 0em 1em 2em; */
     transition: .5s;
+    background-color: var(--body-color);
+    /* background-color: transparent; */
 }
 
 .navbar-nav .nav-item {
@@ -181,6 +203,16 @@ i {
 .navbar-brand,
 .banner-form div h3 {
     color: var(--opposite-color) !important;
+}
+
+
+/* .navbar-dark .navbar-toggler {
+    color: rgb(195 3 3);
+    border-color: var(--body-color) !important;
+} */
+
+.navbar-dark .navbar-toggler-icon {
+    fill: var(--body-color) !important;
 }
 
 
@@ -271,7 +303,7 @@ i {
 }
 
 .banner-section {
-    margin-top: 80px;
+    margin-top: 56px;
     background: linear-gradient(to bottom, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)), url(https://i.ibb.co/XJL6gcM/bannerbg.jpg) no-repeat center;
     background-size: cover;
     z-index: 0;
@@ -282,6 +314,7 @@ i {
 .banner-form {
     background-color: var(--body-color);
     border-radius: 10px;
+    border: 1px solid #848484;
 }
 
 .banner-form h3 {
@@ -293,13 +326,24 @@ i {
     color: var(--theme-color) !important;
 }
 
-.h_80px {
-    height: 80px;
-}
-
-.h_70px {
-    height: 70px;
-}
-
 
 /* ----------banner section ENd------------------------------------------------------ */
+
+
+/* ------------blog---------------------------------------- */
+
+.blog-section h1 {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.blog-section h6 {
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+}
+
+.blog-section img {
+    border-radius: 15px;
+}
