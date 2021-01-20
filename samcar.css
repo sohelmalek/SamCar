@@ -1,0 +1,305 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Nunito&display=swap');
+:root {
+    --body-color: #fff;
+    --heavy-theme-color: #081f46;
+    --font-color: #403b3b;
+    --heading-color: #212020;
+    --theme-color: #379eff;
+    --opposite-color: #212020;
+}
+
+.dark {
+    --body-color: #212020;
+    --heading-color: #eee;
+    --font-color: #e6e6e6;
+    --opposite-color: #fff;
+}
+
+body,
+html {
+    background-color: var(--body-color);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+h6,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5 {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    color: var(--font-color);
+}
+
+
+/* ----dark light mode icon---------------------------------------------- */
+
+.moon-icon {
+    cursor: pointer;
+    /* position: absolute;
+    top: 10px;
+    right: 10px; */
+    color: var(--heading-color);
+    transform: rotate(-25deg);
+}
+
+
+/* ----dark light mode icon END---------------------------------------------- */
+
+
+/* ---------------------navbar dropdown animation------------------------------------------------------------------- */
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.dropdown-menu>li a:hover,
+.dropdown-menu>li.show {
+    background: #007bff;
+    transition: .3s;
+    color: white;
+}
+
+
+/* --------scroll to fix navbar animation-------------------------------- */
+
+.main_nav {
+    background-color: var(--body-color);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+
+/* --------scroll to fix navbar animation END-------------------------------- */
+
+
+/* -------navbar dropdown animation END------------------------------------------------------------------- */
+
+i {
+    display: block;
+}
+
+
+/* ------NAVBAR---------------------------------------------------------------------------- */
+
+.navbar {
+    padding: 1.8em 0em 1em 2em;
+    transition: .5s;
+}
+
+.navbar-nav .nav-item {
+    padding: 0em .4em 0em .4em;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 16px;
+    letter-spacing: .5px;
+    transition: .4s;
+    font-family: 'Nunito', sans-serif;
+    color: var(--heading-color);
+}
+
+.navbar-nav .nav-item a p {
+    font-size: 12px;
+    text-align: left;
+    margin: 0;
+}
+
+.nav-contact p {
+    text-align: center;
+    margin: 0;
+}
+
+.navbar .navbar-nav .nav-item a:hover,
+.active,
+.navbar-light .navbar-nav .nav-icon i {
+    color: var(--theme-color);
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+.dropdown-menu li {
+    padding: 0em 1em 0em 1em;
+}
+
+.dropdown-menu li a {
+    border-radius: 1em;
+    font-size: 0.875rem;
+    line-height: 1.381;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-item ul {
+    border-radius: 1em;
+    box-shadow: 0 20px 30px 0 rgb(41 112 250 / 32%);
+    background-color: var(--body-color);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    font-family: 'Nunito', sans-serif;
+    color: var(--opposite-color);
+}
+
+.navbar-light .navbar-nav .nav-link i {
+    line-height: 35px;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-icon i {
+    width: 1.375rem;
+    height: 1.1875rem;
+    line-height: 35px;
+}
+
+.navbar-brand,
+.banner-form div h3 {
+    color: var(--opposite-color) !important;
+}
+
+
+/* ------NAVBAR END---------------------------------------------------------------------------- */
+
+.cust-btn {
+    border-color: var(--theme-color) !important;
+    color: var(--theme-color);
+}
+
+.manu-contact-btn .cust-btn:hover {
+    border-color: var(--theme-color) !important;
+    background: var(--theme-color) !important;
+    color: white !important;
+}
+
+.cust-btn-1 {
+    border-color: var(--theme-color) !important;
+    background: var(--theme-color) !important;
+    color: white !important;
+}
+
+.navbar-brand i {
+    color: var(--theme-color);
+}
+
+
+/* ----------Go To Top Icon------------------------------------------------------ */
+
+.top-icon:hover {
+    color: white;
+    background: var(--btn-bg-color-trans);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.top-icon:focus {
+    outline: none;
+}
+
+.top-icon {
+    display: none;
+    z-index: 99;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: var(--btn-bg-color);
+    text-align: center;
+    line-height: 39px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    padding: 0;
+}
+
+
+/* ----------Go To Top Icon END------------------------------------------------------ */
+
+
+/* ----------banner section------------------------------------------------------ */
+
+.banner-section h1 {
+    font-size: 9vmin;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.banner-section h6 {
+    color: white;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.banner-section {
+    margin-top: 80px;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)), url(https://i.ibb.co/XJL6gcM/bannerbg.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    min-height: 88vh;
+}
+
+.banner-form {
+    background-color: var(--body-color);
+    border-radius: 10px;
+}
+
+.banner-form h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.active {
+    color: var(--theme-color) !important;
+}
+
+.h_80px {
+    height: 80px;
+}
+
+.h_70px {
+    height: 70px;
+}
+
+
+/* ----------banner section ENd------------------------------------------------------ */
